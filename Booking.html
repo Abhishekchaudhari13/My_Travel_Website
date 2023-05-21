@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <title>Booking Process</title>
+
+  <style>
+    .con1 {
+      background-color: #777;
+      margin-top: 20px;
+      margin-bottom: 20px;
+
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .con {
+      max-width: 700px;
+    }
+
+    .con h1,
+    h2 {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    .btn-primary {
+      margin-top: 20px;
+    }
+  </style>
+
+</head>
+
+<body style="background-color:  antiquewhite;">
+  <header style="background-color: #333; padding-top: 15px; padding-bottom: 10px;">
+    <h1 style="color: white; text-align: center;">Travel Booking Website</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark container bg-dark" style="padding: 10px;">
+      <ul class="navbar-nav bg-dark" style="padding-left: 20px;">
+        <li class="nav-item"><a class="nav-link" href="index.html" style="color: white;">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="destination.html" style="color: white;">Destinations</a></li>
+        <li class="nav-item"><a class="nav-link" href="Booking.html" style="color: white;">Booking</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html" style="color: white;">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="con1 container">
+    <div class="container con" style="padding: 30px;">
+      <h1 style="text-align: center;">Booking Process</h1>
+      <hr>
+      <h2>Select Package</h2>
+      <form>
+        <div class="form-group">
+          <label for="package">Package:</label>
+          <select class="form-control" id="package" required>
+            <option value="">Select Package</option>
+            <option value="package1">Package 1</option>
+            <option value="package2">Package 2</option>
+            <option value="package3">Package 3</option>
+            <!-- Add more options as needed -->
+          </select>
+        </div>
+      </form>
+
+      <h2>Enter Traveler Information</h2>
+      <form>
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" class="form-control" id="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone:</label>
+          <input type="tel" class="form-control" id="phone" required>
+        </div>
+        <div class="form-group">
+          <label for="requirements">Specific Requirements:</label>
+          <textarea class="form-control" id="requirements" rows="3"></textarea>
+        </div>
+      </form>
+
+      <h2>Make Payment</h2>
+      <form>
+        <div class="form-group">
+          <label for="cardNumber">Card Number:</label>
+          <input type="text" class="form-control" id="cardNumber" required>
+        </div>
+        <div class="form-group">
+          <label for="expiry">Expiry Date:</label>
+          <input type="text" class="form-control" id="expiry" required>
+        </div>
+        <div class="form-group">
+          <label for="cvv">CVV:</label>
+          <input type="text" class="form-control" id="cvv" required>
+        </div>
+      </form>
+
+      <button type="submit" class="btn btn-primary">Confirm Booking</button>
+    </div>
+  </div>
+</body>
+
+</html>
